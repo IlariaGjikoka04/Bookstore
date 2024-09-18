@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="css/dune.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>View all</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="project.html"><img src="books/6920933-removebg-preview.png" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light active" aria-current="page" href="project.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="authors.html">Authors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-light  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </a>
+                <div class="dropdown-menu dropdown-menu-columns" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu-column">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Adventure</a>
+                        <a class="dropdown-item" href="#">Comedy</a>
+                        <a class="dropdown-item" href="#">Drama</a>
+                        <a class="dropdown-item" href="#">Fantasy</a>
+                    </div>
+                    <div class="dropdown-menu-column">
+                        <a class="dropdown-item" href="#">Horror</a>
+                        <a class="dropdown-item" href="#">Mystery</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Sci-Fi</a>
+                        <a class="dropdown-item" href="#">Thriller</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex  " role="search">
+              <input class="form-control me-2"type ="search" placeholder="Search" aria-label="Search">
+              <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass text-secondary "></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/Funny Story.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Funny Story</h5>
+                <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="Funny Story" data-img="books/Funny Story.jpg" data-summary=" Emily Henry newest summer romance, is about two people -- Daphne and Miles -- who move in together after their childhood-best-friend exes, Peter and Petra, decide to dump them and marry each other instead." data-price="$10" >Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/The Fox Wife.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Fox Wife</h5>
+                <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="The Fox Wife" data-img="books/The Fox Wife.jpg" data-summary="A young woman is found frozen in the snow. Her death is clouded by rumors of foxes involved, which are believed to lure people by transforming themselves into beautiful women and men. Bao, a detective with a reputation for sniffing out the truth, is hired to uncover the dead woman's identity." data-price="$10" >Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/First Lie Wins.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">First Lie Wins</h5>
+                 <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="First Lie Wins" data-img="books/First Lie Wins.jpg" data-summary="Evie Porter has everything a nice Southern girl could want: a doting boyfriend, a house with a white picket fence, a tight group of friends. The only catch: Evie Porter doesn't exist. The identity comes first: Evie Porter. Once she's given a name and location by her mysterious boss, Mr." data-price="$10" >Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/the bride.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The bride</h5>
+   <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="The bride" data-img="books/the bride.jpg" data-summary="A dangerous alliance between a Vampyre bride and an Alpha Werewolf becomes a love deep enough to sink your teeth into in this new paranormal romance. Misery Lark, the only daughter of the most powerful Vampyre councilman of the Southwest, is an outcast—again." data-price="$10" >Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row mt-4">
+          <!-- Rreshti i dytë me katër karta -->
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/jamesPercival.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">James Percival</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="James Percival" data-img="books/jamesPercival.jpeg" data-summary="James is a retelling, for the most part, of Twain's The Adventures of Huckleberry Finn, told from the point of view of enslaved Jim, and retelling the story of his and Huck's flight down the Mississippi River, and the many characters they meet along the way." data-price="$10" >Add to cart</button>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/malas.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Malas</h5>
+     <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="Malas" data-img="books/malas.jpeg" data-summary="When her beloved grandmother passes away, Lulu finds herself drawn to the glamorous stranger who crashed the funeral and who lives alone and shunned on the edge of town. Their unexpected kinship picks at the secrets of Lulu's family's past." data-price="$10" >Add to cart</button>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/twoSides.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Two Sides to Every Murder</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="Two Sides to Every Murder" data-img="books/twoSides.jpeg" data-summary="The story follows two teens, Olivia and Reagan, who are each heading to Lost Lake, a camp which has been closed for about sixteen years, since three people were murdered in one night." data-price="$10" >Add to cart</button>   
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/Fate.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">A Fate Inked In Blood</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="A Fate  Inked in Blood" data-img="books/Fate.jpeg" data-summary="Synopsis. Bound in an unwanted marriage, Freya spends her days gutting fish but dreams of becoming a warrior. And of putting an axe in her boorish husband's back. Freya's dreams abruptly become reality when her husband betrays her to the region's jarl, landing her in a fight to the death against his son, Bjorn." data-price="$10" >Add to cart</button>   
+              </div>
+            </div>
+          </div>
+        </div>
+
+ <div class="row mt-4">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/rachelprice.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Reappearance of Rachel Price</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="The Reappearance of Rachel Price" data-img="books/rachelprice.jpeg" data-summary="Sixteen years ago, Rachel Price vanished and young Bel was the only witness, but she has no memory of it. Rachel is gone, long presumed dead, and Bel wishes everyone would just move on. But the case is dredged up from the past when the Price family agrees to a true crime documentary." data-price="$10" >Add to cart</button>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/afterAnnie.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">After Annie</h5>
+     <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="After Annie" data-img="books/afterAnnie.jpg" data-summary="When Annie Brown dies suddenly, her husband, her four young children and her closest friend are left to struggle without the woman who centered their lives. Bill Brown finds himself overwhelmed, and Annie's best friend Annemarie is lost to old bad habits without Annie's support." data-price="$10" >Add to cart</button>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/martyr.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Martyr</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="Martyr" data-img="books/martyr.jpg" data-summary="Kaveh Akbar's Martyr! is a paean to how we spend our lives seeking meaning—in faith, art, ourselves, others—in which a newly sober, orphaned son of Iranian immigrants, guided by the voices of artists, poets, and kings, embarks on a search that leads him to a terminally ill painter living out her final days in the ..." data-price="$10" >Add to cart</button>   
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="books/listen for the lie.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Listen for the Lie</h5>
+               <button class="addTocart" data-toggle="modal" data-target="#bookModal" data-title="Listen for the Lie" data-img="books/listen for the lie.jpg" data-summary="Five years ago, Lucy Chase is found wandering the streets covered in her best friend Savvy's blood. Everyone thinks she is a murderer, but Lucy can't remember what happened. She has since moved to LA and started a new life, but then the host of a hit true crime podcast decides to investigate Savvy's murder." data-price="$10" >Add to cart</button>   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookModalLabel">Titulli i Librit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="img-container">
+        <img src="" id="bookImage" alt="Imazhi i Librit">
+        </div>
+        <p id="bookSummary">Përmbledhja e librit shfaqet këtu.</p>
+        <p><strong id="bookPrice">Çmimi: $0</strong></p>
+      </div>
+      <div class="modal-footer d-grid gap-2 justify-content-center">
+        <button class="KeepShopping " id="keepShoppingBtn"  data-bs-dismiss="modal">Keep Shopping</button>
+                      <button type="submit"  class="KeepShopping" id="buyBtn">Buy</button>            
+      </div>
+      <div id="buyMessage" class="alert alert-success mt-3" style="display: none;">
+        Veprimi u krye me sukses!
+    </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white mt-4">
+  <div class="container py-5">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Contact Us</h5>
+
+                <p><a href="https://maps.app.goo.gl/bj59dHAuJeDdoHdz7" target="_blank" class="text-decoration-none text-white">Address</a></p>
+                 <p> Phone: (123) 456-7890</p>
+                 <p> Email: info@example.com</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Home</a></li>
+                  <li><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#aboutUsModal" >About Us</a></li>
+                  <li><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#shippingModal">Shipping</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#contactModal"  class="text-white">Contact</a></li>
+              </ul>
+          </div>
+<!-- Modal për "About Us" -->
+<div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title text-dark" id="aboutUsModalLabel">About Us</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body text-dark">
+  <h5>Welcome to Bookstore</h5>
+  <p>Your premier destination for discovering and purchasing a diverse range of books. Founded with a passion for literature, our mission is to provide book lovers with an extensive selection of titles that cater to every taste and interest.</p>
+  <h5>Our Commitment</h5>
+  <p>We are committed to delivering exceptional service and a seamless shopping experience. Whether you're looking for the latest bestseller, a classic novel, or a hidden gem, we strive to make your book-buying journey as enjoyable as possible.</p>
+  <h5>Get in Touch</h5>
+  <p>If you have any questions or need assistance, please don't hesitate to reach out to us. We are here to help you find the perfect book and make your reading experience unforgettable.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal Shipping -->
+<div class="modal fade" id="shippingModal" tabindex="-1" aria-labelledby="shippingModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title text-dark" id="shippingModalLabel">Shipping Information</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body text-dark">
+  <h4>Delivery Policy</h4>
+  <p>We offer standard and express shipping options. Standard shipping takes 5-7 business days, while express shipping takes 1-3 business days.</p>
+  <p>Shipping rates are calculated based on the weight of your order and your location. You can view the shipping cost during checkout.</p>
+  <h4>Shipping Options</h4>
+  <ul>
+    <li>Standard Shipping: 5-7 business days</li>
+    <li>Express Shipping: 1-3 business days</li>
+    <li>International Shipping: Varies by destination</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <a href="https://www.facebook.com/" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+              <a href="https://x.com/" target="_blank" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="blank" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
+      <div class="text-center mt-4">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+  </div>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="contactModalLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="text-dark">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-dark">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="text-dark">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="addTocart">Submit</button>
+                </form>
+                <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been sent successfully!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script src="javascript/viewAll.js"></script>
+</body>
+</html>

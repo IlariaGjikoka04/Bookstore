@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="css/dune.css">
+    <title>The book thief</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="project.html"><img src="books/6920933-removebg-preview.png" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light active" aria-current="page" href="project.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="authors.html">Authors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-light  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genres
+                </a>
+                <div class="dropdown-menu dropdown-menu-columns" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu-column">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Adventure</a>
+                        <a class="dropdown-item" href="#">Comedy</a>
+                        <a class="dropdown-item" href="#">Drama</a>
+                        <a class="dropdown-item" href="#">Fantasy</a>
+                    </div>
+                    <div class="dropdown-menu-column">
+                        <a class="dropdown-item" href="#">Horror</a>
+                        <a class="dropdown-item" href="#">Mystery</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Sci-Fi</a>
+                        <a class="dropdown-item" href="#">Thriller</a>
+                    </div>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex  " role="search">
+              <input class="form-control me-2"type ="search" placeholder="Search" aria-label="Search">
+              <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass text-secondary "></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container1 mt-3 text-center">
+        <div class="row">
+          <div class="col-4 image-container">
+            <img height="480px" width="330px" src="books/the book thief.jpg">
+          </div>
+          <div class="col-7 text-container">
+            <h3>The book Thief</h3>
+            <p>by Markus Zuzak</p>
+            <p>It is 1939. In Nazi Germany, the country is holding its breath. Death has never been busier - and will become busier still.
+
+                By her brother's graveside, nine year old Liesel's life is changed forever when she picks up a single object, abandoned in the snow. It is The Gravedigger's Handbook, and this is her first act of book thievery.
+                
+                So begins Liesel's love affair with books and words, and soon she is stealing from Nazi book-burnings, the mayor's wife's library . . . wherever there are books to be found.
+                
+                But these are dangerous times, and when Liesel's foster family hides a Jew in their basement, nothing will ever be the same again.</p>
+            <button class="addTocart" data-bs-toggle="modal" data-bs-target="#bookModal" >Add to cart</button>
+        </div>
+        </div>
+      </div>
+      <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bookModalLabel">The book thief</h5>
+            </div>
+            <div class="modal-body text-center">
+              <div class="img-container">
+              <img src="books/the book thief.jpg"  alt="Imazhi i Librit" class="img-fluid mb-3">
+              </div>
+              <p>Price:$14</p>
+            </div>
+            <div class="modal-footer d-grid gap-2 justify-content-center">
+              <button class="KeepShopping " id="keepShoppingBtn"  data-bs-dismiss="modal">Keep Shopping</button>
+                            <button class="KeepShopping" id="buyBtn">Buy</button>
+                                         
+            </div>
+            <div id="buyMessage" class="alert alert-success mt-3" style="display: none;">
+              Veprimi u krye me sukses!
+          </div>
+          </div>
+        </div>
+      </div>
+     
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="javascript/project.js"></script>
+</body>
+</html>
+</body>
+</html>
